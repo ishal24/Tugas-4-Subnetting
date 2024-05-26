@@ -4,6 +4,9 @@
 | Muhammad Faishal Rizqy | `5027221026` |
 
 ## Topologi
+![topologi](https://github.com/ishal24/Tugas-4-Subnetting/blob/main/img/topology.png)
+
+Pada topologi ini, saya membagi router menjadi tiga area, yakni router1, router2, dan router3 yang dimana masing-masing mewakili subnet 1, subnet 2, dan subnet 3. Ketiga router tersebut terhubung ke router0 melewati switch0. Disini saya hanya menggunakan 2 client untuk masing-masing subnet karena akan terlalu banyak jika harus menampilkan satu per satu, namun jika ingin menambahkan client bisa dengan menghubungkan switch tambahan dengan switch yang terhubung ke router.
 
 ## Perhitungan Subnetting
 > Kebutuhan alamat IP
@@ -11,14 +14,13 @@
 - Subnet 2 = 60 IP Adress + 2 (network dan broadcast) = 62 IP Adress
 - Subnet 3 = 120 IP Adress + 2 (network dan broadcast) = 122 IP Adress
 
-> Subnet Mask
+> Jumlah bit
 - Subnet 1 = subnet mask /28 => 16 IP Adress
 - Subnet 2 = subnet mask /26 => 64 IP Adress
 - Subnet 3 = subnet mask /25 => 128 IP Adress
 
-> Allocation
+> Alokasi blok alamat IP
 - ### **Subnet 3:**
-
 - Alamat Network: 14.24.74.0
 - Subnet Mask: /25 (255.255.255.128)
 - Range IP: 14.24.74.1 - 14.24.74.126
@@ -38,27 +40,3 @@
 - Alamat Broadcast: 14.24.74.207
 
 `Sisa` = (128+64+16) - (122+62+12) = 12
-
-
-- Router
-connected to:
-nat
-switch0
-
-- switch0
-connected to:
-router1
-router2
-router3
-
-- router1
-connected to:
-switch1 -> 10 client
-
-- router2
-connected to:
-switch2 -> 60 client
-
-- router3
-connected to:
-switch3 -> 120 client
