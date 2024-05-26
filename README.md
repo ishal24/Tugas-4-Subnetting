@@ -3,6 +3,17 @@
 | ---------------------- | ------------ |
 | Muhammad Faishal Rizqy | `5027221026` |
 
+## Soal: 
+Sebuah instansi memiliki blok IP Address kelas C dimulai dari 14.24.74.0/24. Instansi ini memerlukan 3 subnet yang berbeda dengan rincian sebagai berikut:
+
+1. Subnet 1: 10 alamat IP
+2. Subnet 2: 60 alamat IP
+3. Subnet 3: 120 alamat IP untuk ruang pegawai
+
+Tugas:
+- Gambarkan topologinya menggunakan CPT/GNS3/tools apapun (disarankan pakai CPT untuk konfigurasi jaringan ke depannya)
+- Lakukan perhitungan subnetting menggunakan VLSM (kerjakan di Excel/Word/apapun) yang penting hasil akhirnya berupa PDF. Jangan lupa cantumkan gambar topologinya berupa image.
+
 ## Topologi
 ![topologi](https://github.com/ishal24/Tugas-4-Subnetting/blob/main/img/topology.png)
 
